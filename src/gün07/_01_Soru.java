@@ -103,8 +103,8 @@ public class _01_Soru extends BaseDriver {
     {
         System.out.println(e.getText());  // //$15.99
         String strUrunFiyat=e.getText().replaceAll("[^0-9,.]","");  // rakam ve nokta ve virgül dışındakileri sil
-        double urunFiyat=Double.parseDouble(strUrunFiyat);
-        urunlerFiyatToplami+=urunFiyat;
+        double urunFiyat=Double.parseDouble(strUrunFiyat);//stringi double çevirme
+        urunlerFiyatToplami+=urunFiyat;//topla
     }
 
     //Alt toplamı bulalım:  item total alınıyor

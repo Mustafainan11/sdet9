@@ -16,8 +16,8 @@ public class _08_FindigElements_tag {
 
         List<WebElement> linkler=driver.findElements(By.tagName("a"));
         for (WebElement link:linkler)
-            if (!link.getText().equals(" "))
-                System.out.println("link.getText() = " + link.getText());
+            if (!link.getText().equals(""))//boş olmayanları çıkarma
+                System.out.println("link.getText() = " + link.getText());//bütün linkleri ver.
         MyFunc.Bekle(5);
         driver.quit();
 

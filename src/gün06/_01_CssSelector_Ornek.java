@@ -1,6 +1,7 @@
 package gün06;
 
 import Utlity.BaseDriver;
+import Utlity.MyFunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,10 +12,10 @@ public class _01_CssSelector_Ornek extends BaseDriver {
     public void Test1() {
         driver.get("https://qa-practice.netlify.app/auth_ecommerce");
 
-        WebElement email = driver.findElement(By.cssSelector("input [type='email']"));
+        WebElement email = driver.findElement(By.cssSelector("input[type='email']"));
         email.sendKeys("admin@admin.com");
 
-        WebElement password = driver.findElement(By.cssSelector("input [type='password']"));
+        WebElement password = driver.findElement(By.cssSelector("input[type='password']"));
         password.sendKeys("admin123");
 
         WebElement submint = driver.findElement(By.cssSelector("button[type='submit'][test-data='submitBtn']"));

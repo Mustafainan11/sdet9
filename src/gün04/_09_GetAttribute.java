@@ -13,7 +13,7 @@ public class _09_GetAttribute {
         driver.get("https://form.jotform.com/221934510376353");
 
         WebElement element=driver.findElement(By.id("sublabel_8_first"));
-
+        //elementin özellikleri attribute
         System.out.println("element.getAttribute(class) = " + element.getAttribute("class"));
         System.out.println("element.getAttribute(for) = " + element.getAttribute("for"));
         System.out.println("element.getAttribute(id) = " + element.getAttribute("id"));

@@ -3,7 +3,7 @@ package Utlity;
 public class MyFunc {
     public static void Bekle(int saniye){
         try {
-            Thread.sleep(saniye*1000);
+            Thread.sleep(saniye*1000);//kodu 1 saniye beklet veya hatayı görmek için beklet
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

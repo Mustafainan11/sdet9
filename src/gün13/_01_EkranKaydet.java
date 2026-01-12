@@ -35,7 +35,7 @@ public class _01_EkranKaydet extends BaseDriver {
         File hafizadaDosyaHalinde =ts.getScreenshotAs(OutputType.FILE); // ekran kaydı aldı dosya tipi şeklinde
 
         // hafızadaki bu ekran görüntüsünü, fiziksel bir dosyaya yaz dememiz lazım
-        FileUtils.copyFile(hafizadaDosyaHalinde, new File("ekranGoruntuleri\\screenshot.jpg"));
+        FileUtils.copyFile(hafizadaDosyaHalinde, new File("ekranGoruntuleri/screenshot.jpg"));
 
     }
 
